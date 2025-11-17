@@ -1,0 +1,14 @@
+server:
+  port: ${SERVER_PORT:80}
+
+spring:
+  datasource:
+    url: jdbc:postgresql://${DB_HOST:postgres-db}:${DB_PORT:5432}/${DB_NAME:edtech_db}
+    username: ${DB_USERNAME:postgres}
+    password: ${DB_PASSWORD:postgres}
+    driver-class-name: org.postgresql.Driver
+
+logging:
+  level:
+    ru.javabruse: INFO
+    org.hibernate.SQL: false
